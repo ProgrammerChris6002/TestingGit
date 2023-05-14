@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Games</title>
+    <style>
+        .box {
+            display: flex;
+            height: 500px;
+        }
+
+        .color {
+            height: 500px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="color one">One</div>
+        <div class="color two">Two</div>
+        <div class="color three">Three</div>
+    </div>
+
+
+    <script>
+        var one = window.prompt("Enter your first color:");
+        var two = window.prompt("Enter your second color:");
+        var three = window.prompt("Enter your third color:");
+
+        document.querySelector(".one").style.backgroundColor = one;
+        document.querySelector(".two").style.backgroundColor = two;
+        document.querySelector(".three").style.backgroundColor = three;
+    </script>
+</body>
+</html>

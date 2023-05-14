@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <button onclick="alert('Hello World')" id="btn">Click Me</button>
+    <div>My div</div>
+
+    <script>
+        console.log("Hello JavaScript!");
+
+        document.write("This is JS");
+        document.querySelector("div").style.backgroundColor = 'red';
+
+        document.getElementById("btn").style.color = "green";
+
+        // window.alert("This is an alert!");
+        // window.confirm("Are you sure?");
+        // window.prompt("What is your name?");
+
+        document.querySelector("div").innerHTML = "JavaScript";
+
+        let container = document.querySelector("div");
+        container.style.backgroundColor = "blue";
+        container.innerHTML = "This is cool";
+    </script>
+</body>
+</html>

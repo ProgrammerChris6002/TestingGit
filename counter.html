@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        This is cool
+    </div>
+    <button>Change</button> -->
+
+    <div>
+        <p class="num">0</p>
+        <button class="decrease">Decrease</button>
+        <button class="reset">Reset</button>
+        <button class="increase">Increase</button>
+    </div>
+    
+
+    <script>
+        // var any = document.querySelector(".box");
+        // var btn = document.querySelector("button");
+
+        // btn.onclick = function () {
+        //     any.innerHTML = "This is super cool";
+        // };
+
+        // btn.addEventListener("click", function () {
+        //     any.innerHTML = "This is super cool";
+        // });
+
+        let num = document.querySelector(".num");
+        let add = document.querySelector(".increase");
+        let sub = document.querySelector(".decrease");
+        var reset = document.querySelector(".reset");
+
+        var counter = 0;
+
+        add.addEventListener("click", function () {
+            counter++;
+            // console.log(counter);
+            num.innerHTML = counter;
+        });
+
+        sub.addEventListener("click", function () {
+            counter--;
+            num.innerHTML = counter;
+        });
+
+        reset.addEventListener("click", function () {
+            counter = 0;
+            num.innerHTML = counter;
+        });
+    </script>
+</body>
+</html>

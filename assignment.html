@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Correction</title>
+    <style>
+        .box {
+            height: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="btn">Change Color</button>
+    </div>
+    <!-- <p></p> -->
+
+
+    <script>
+        var div = document.querySelector(".box");
+        var btn = document.querySelector(".btn");
+        var para = document.querySelector("p");
+        var count = 0;
+
+        div.style.backgroundColor = "red";
+
+        var colors = ["green", "blue", "purple", "pink", "black", "grey"];
+        // console.log(colors.length);
+
+        // para.innerHTML = colors.length;
+
+        btn.addEventListener("click", function () {
+            div.style.backgroundColor = colors[count];
+            count++;
+            // console.log(count);
+
+            if (count == 7) {
+                count = 0;
+                div.style.backgroundColor = colors[count];
+                count++;
+                // console.log(count);
+            }
+        });
+    </script>
+</body>
+</html>

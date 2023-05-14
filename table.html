@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling HTML Tables</title>
+    <style>
+        table, tr, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            height: 200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        td:hover, th:hover {
+            background-color: coral;
+        }
+
+        td {
+            background-color: greenyellow;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            font-size: 24px;
+            padding: 10px 30px;
+            border: none;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        button:hover {
+            padding: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>SCORE</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>19</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <td>Timmy</td>
+                <td>25</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>18</td>
+                <td>38</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button>Hover On Me</button>
+</body>
+</html>
